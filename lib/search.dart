@@ -3,6 +3,7 @@ import 'package:practice/homie.dart';
 import 'package:practice/feeds.dart';
 import 'package:practice/recipes.dart';
 import 'package:practice/profile.dart';
+import 'package:practice/reciperesult.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({super.key});
@@ -415,7 +416,13 @@ class _SearchPageState extends State<SearchPage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.pop(context);
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (BuildContext context) {
+                      return const RecipeResultPage();
+                    },
+                  ),
+                );
               },
               child: const Image(
                 width: 275,
