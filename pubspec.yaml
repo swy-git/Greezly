@@ -90,6 +90,9 @@ flutter:
     - family: Bayon
       fonts: 
         - asset: fonts/Bayon-Regular.ttf
+    - family: Inter
+      fonts: 
+        - asset: fonts/Inter-Medium.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

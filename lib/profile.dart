@@ -32,10 +32,22 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (BuildContext context) {
-                        return const SettingsPage();
-                      }));
+                      Navigator.push(
+                        context,
+                        PageRouteBuilder(
+                          transitionDuration: const Duration(milliseconds: 200),
+                          pageBuilder:
+                              (context, animation, secondaryAnimation) {
+                            return SlideTransition(
+                              position: Tween<Offset>(
+                                begin: const Offset(1.0, 0.0),
+                                end: Offset.zero,
+                              ).animate(animation),
+                              child: const SettingsPage(),
+                            );
+                          },
+                        ),
+                      );
                     },
                     child: const Image(
                       width: 30,
