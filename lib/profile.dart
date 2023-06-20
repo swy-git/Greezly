@@ -149,7 +149,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                 ],
               ),
-              Row(
+              const Row(
                 children: [
                   Text('data'),
                   Text('data'),
