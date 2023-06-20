@@ -53,6 +53,7 @@ class _RecipeDetailsPageState extends State<RecipeDetailsPage> {
                   'FRUIT SANDO',
                   style: TextStyle(
                     fontSize: 36,
+                    fontFamily: 'Fredoka',
                     fontWeight: FontWeight.bold,
                     color: Color(0xFF2E3006),
                   ),
@@ -75,6 +76,7 @@ class _RecipeDetailsPageState extends State<RecipeDetailsPage> {
                               '4.75 / 5.00',
                               style: TextStyle(
                                 fontSize: 12,
+                                fontFamily: 'Fredoka',
                               ),
                             ),
                           ],
@@ -91,6 +93,7 @@ class _RecipeDetailsPageState extends State<RecipeDetailsPage> {
                             Text(
                               '10 minutes',
                               style: TextStyle(
+                                fontFamily: 'Fredoka',
                                 fontSize: 12,
                               ),
                             ),
@@ -109,6 +112,7 @@ class _RecipeDetailsPageState extends State<RecipeDetailsPage> {
                               '3/3 Match!',
                               style: TextStyle(
                                 fontSize: 12,
+                                fontFamily: 'Fredoka',
                               ),
                             ),
                           ],
