@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:practice/recipedetails.dart';
+import 'package:practice/navrecipe.dart';
 
 class CustomScroll extends StatelessWidget {
   final String? imgurl;
@@ -31,7 +31,7 @@ class CustomScroll extends StatelessWidget {
         onTap: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => RecipeDetailsPage()),
+            MaterialPageRoute(builder: (context) => const NavRecipe()),
           );
         },
         child: Padding(

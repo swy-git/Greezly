@@ -163,7 +163,6 @@ class _RecipeResultPageState extends State<RecipeResultPage> {
             SizedBox(
               height: 4,
             ),
-
             VerticalScroll(),
           ],
         ),
