@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:practice/widget/horiscroll.dart';
-import 'package:practice/recipereview.dart';
 
 class RecipeDetailsPage extends StatefulWidget {
   const RecipeDetailsPage({super.key});
@@ -49,21 +48,6 @@ class _RecipeDetailsPageState extends State<RecipeDetailsPage> {
               children: [
                 SizedBox(
                   height: 24,
-                ),
-                GestureDetector(
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (BuildContext context) {
-                          return const RecipeReviewPage();
-                        },
-                      ),
-                    );
-                  },
-                  child: const Image(
-                    width: 275,
-                    image: AssetImage('images/search.png'),
-                  ),
                 ),
                 Text(
                   'FRUIT SANDO',

@@ -165,51 +165,6 @@ class _RecipeResultPageState extends State<RecipeResultPage> {
             ),
 
             VerticalScroll(),
-
-            // const Center(
-            //   child: Text(
-            //     'Recipe Result',
-            //     style: TextStyle(
-            //       color: Color.fromRGBO(255, 92, 44, 1),
-            //       fontFamily: 'Fredoka',
-            //       fontSize: 30,
-            //       fontWeight: FontWeight.bold,
-            //     ),
-            //   ),
-            // ),
-            // const SizedBox(
-            //   height: 20,
-            // ),
-            // GestureDetector(
-            //   onTap: () {},
-            //   child: const Image(
-            //     image: AssetImage('images/liked.png'),
-            //   ),
-            // ),
-            // GestureDetector(
-            //   onTap: () {},
-            //   child: const Image(
-            //     image: AssetImage('images/breakfast.png'),
-            //   ),
-            // ),
-            // GestureDetector(
-            //   onTap: () {},
-            //   child: const Image(
-            //     image: AssetImage('images/lunch.png'),
-            //   ),
-            // ),
-            // GestureDetector(
-            //   onTap: () {},
-            //   child: const Image(
-            //     image: AssetImage('images/dinner.png'),
-            //   ),
-            // ),
-            // GestureDetector(
-            //   onTap: () {},
-            //   child: const Image(
-            //     image: AssetImage('images/addNew.png'),
-            //   ),
-            // ),
           ],
         ),
       ),
