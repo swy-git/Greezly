@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:practice/recipedetails.dart';
-import 'package:practice/recipes.dart';
 
 class CustomScroll extends StatelessWidget {
   final String? imgurl;
