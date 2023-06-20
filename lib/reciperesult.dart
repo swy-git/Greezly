@@ -109,34 +109,40 @@ class _RecipeResultPageState extends State<RecipeResultPage> {
         child: Column(
           children: [
             // Search bar
-            Positioned(
-              child: Container(
-                height: 50,
-                color: Colors.white,
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      PageRouteBuilder(
-                        transitionDuration: const Duration(milliseconds: 200),
-                        pageBuilder: (context, animation, secondaryAnimation) {
-                          return SlideTransition(
-                            position: Tween<Offset>(
-                              begin: const Offset(0.0, -1.0),
-                              end: Offset.zero,
-                            ).animate(animation),
-                            child: const SearchPage(),
-                          );
-                        },
+            Stack(
+              children: [
+                Positioned(
+                  child: Container(
+                    height: 50,
+                    color: Colors.white,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          PageRouteBuilder(
+                            transitionDuration:
+                                const Duration(milliseconds: 200),
+                            pageBuilder:
+                                (context, animation, secondaryAnimation) {
+                              return SlideTransition(
+                                position: Tween<Offset>(
+                                  begin: const Offset(0.0, -1.0),
+                                  end: Offset.zero,
+                                ).animate(animation),
+                                child: const SearchPage(),
+                              );
+                            },
+                          ),
+                        );
+                      },
+                      child: const Image(
+                        image: AssetImage('images/searchbar.png'),
+                        width: 345,
                       ),
-                    );
-                  },
-                  child: const Image(
-                    image: AssetImage('images/searchbar.png'),
-                    width: 345,
+                    ),
                   ),
-                ),
-              ),
+                )
+              ],
             ),
 
             const SizedBox(

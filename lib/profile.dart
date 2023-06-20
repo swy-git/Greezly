@@ -161,10 +161,31 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                 ],
               ),
-              Row(
+              const SizedBox(
+                height: 15,
+              ),
+              const Row(
                 children: [
-                  Text('data'),
-                  Text('data'),
+                  SizedBox(
+                    width: 60,
+                  ),
+                  Text(
+                    'Feeds',
+                    style: TextStyle(
+                      fontFamily: 'ABeeZee',
+                      fontSize: 16,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 80,
+                  ),
+                  Text(
+                    'Your Recipes',
+                    style: TextStyle(
+                      fontFamily: 'ABeeZee',
+                      fontSize: 16,
+                    ),
+                  ),
                 ],
               ),
               const SizedBox(
